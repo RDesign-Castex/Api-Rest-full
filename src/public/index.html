@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CRUD de Usuarios</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+    <h1>CRUD de Usuarios</h1>
+
+    <!-- Formulario para crear un nuevo usuario -->
+    <form id="create-form">
+        <h2>Agregar Usuario</h2>
+        <input type="text" id="name-input" placeholder="Nombre" />
+        <input type="email" id="email-input" placeholder="Correo electrónico" />
+        <button type="submit">Guardar</button>
+    </form>
+
+    <!-- Tabla para mostrar los usuarios existentes -->
+    <table id="users-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Correo electrónico</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="users-table-body">
+            <!-- Filas de usuarios se agregarán dinámicamente aquí -->
+        </tbody>
+    </table>
+
+    <!-- Formulario para editar un usuario existente -->
+    <form id="edit-form" style="display: none">
+        <h2>Editar Usuario</h2>
+        <input type="text" id="edit-name-input" placeholder="Nombre" />
+        <input type="email" id="edit-email-input" placeholder="Correo electrónico" />
+        <button type="submit">Guardar</button>
+        <button type="button" id="cancel-edit-button">Cancelar</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
